@@ -8,9 +8,7 @@ next()
 })
 app.use((req,res,next)=>{
    console.log("next Middleware");
+   res.send("<h1>Hello</h1>")
     })
 
-const server = http.createServer(app)
-
-
-server.listen(8080)
+app.listen(8080)
